@@ -21,7 +21,7 @@
 OUTFLAG= -o
 # Flag : CC
 #	Use this flag to define compiler to use
-CC 		= $(WASI_SDK_ROOT)/bin/clang
+CC 		= $(WASI_SDK_ROOT)/bin/clang --sysroot=$(WASI_SDK_ROOT)/share/wasi-sysroot
 # Flag : CFLAGS
 #	Use this flag to define compiler options. Note, you can add compiler options from the command line using XCFLAGS="other flags"
 PORT_CFLAGS = -O3 -nostdlib

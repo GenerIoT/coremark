@@ -14,7 +14,7 @@
 # 
 # Original Author: Shay Gal-on
 
-CC = $(WASI_SDK_ROOT)/bin/clang
+CC = $(WASI_SDK_ROOT)/bin/clang --sysroot=$(WASI_SDK_ROOT)/share/wasi-sysroot
 
 NO_LIBRT = 1
 
